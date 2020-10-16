@@ -1,0 +1,55 @@
+body {
+    background-color: aquamarine;
+}
+
+.GridProv {
+    display: grid;
+    width: 40vw;
+    height: 100vh;
+    grid-template-areas:
+        'he he he'
+        'ye ye ye'
+        'ye ye ye'
+        'ye ye ye'
+        'as as as'
+        'as as as'
+        'ft ft ft'
+    ;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+
+
+}
+
+.header {
+    grid-area: he;
+    background-color: blueviolet;
+
+}
+
+.footer {
+    grid-area: ft;
+    background-color: darkblue;
+    
+}
+
+.yeye {
+    grid-area: ye;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+
+}
+
+.aside {
+    grid-area: as;
+    background-color: rgb(208, 23, 224);
+    
+}
+
+.yeyeye {
+    background-color: green;
+}
+
